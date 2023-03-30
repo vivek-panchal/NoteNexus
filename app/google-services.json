@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852933388849",
+    "project_id": "notenexus-78bf7",
+    "storage_bucket": "notenexus-78bf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852933388849:android:2194bca6e014f2d1254310",
+        "android_client_info": {
+          "package_name": "com.example.notenexus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852933388849-a9ehn2e7d2qk3vck6obdj38odf7hnraq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL8yindKrXdXnA_K9q00m0RB5Qq2p85e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852933388849-a9ehn2e7d2qk3vck6obdj38odf7hnraq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

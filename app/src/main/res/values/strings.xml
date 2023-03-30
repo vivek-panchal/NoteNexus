@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NoteNexus</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum interdum congue. Duis orci magna, maximus id fermentum mollis, faucibus eget elit. Sed sodales arcu eu risus aliquam, non pellentesque neque mattis. Sed molestie ornare ipsum, ut placerat velit sagittis eu. Phasellus mattis eu massa non fermentum. In egestas nulla ac laoreet congue. Curabitur id tellus eu diam ullamcorper tempus. Sed aliquam porttitor efficitur. Curabitur feugiat sed justo quis suscipit. Pellentesque id lacinia est. Proin vitae tortor mauris. Suspendisse potenti.Suspendisse et convallis turpis. Donec id elit ut orci ullamcorper sagittis quis vitae ante. Aliquam vulputate dui et turpis placerat tristique. Cras vehicula fermentum auctor. Sed ac mauris sed ipsum tincidunt tincidunt. Nulla consequat consectetur lacinia. Duis et turpis sapien. Cras ultricies ullamcorper ligula vel tempor. Suspendisse et purus consectetur, rutrum est a, pharetra turpis. Cras vitae semper leo. Nulla tempus vehicula sem quis vehicula. Donec id sapien nisi. Praesent non risus id lacus sagittis imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce enim turpis, consequat in vehicula ultricies, suscipit vitae dui. In commodo, ante ornare consectetur finibus, leo mi rutrum purus, eget laoreet nisi dui eu magna.</string>
+    <string name="edited_on">Edited on: %1$s</string>
+
+</resources>

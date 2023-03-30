@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.NoteFragment"
+    android:background="?attr/backgroundColor">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/app_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="My Notes"
+                    android:textSize="25sp"
+                    android:textColor="?attr/colorOnSecondary"
+                    android:fontFamily="@font/google_sans_bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="2dp">
+
+                </com.google.android.material.textview.MaterialTextView>
+
+                <ImageView
+                    android:id="@+id/note_user"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/app_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_title"
+                    app:layout_constraintTop_toTopOf="@+id/app_title"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"></ImageView>
+
+                <ImageView
+                    android:id="@+id/note_grid"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toStartOf="@+id/note_user"
+                    app:layout_constraintStart_toEndOf="@+id/app_title"
+                    app:layout_constraintTop_toTopOf="@+id/app_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_title"
+                    android:src="@drawable/ic_round_grid_view_24"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/app_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp">
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/rounded_search"
+                        android:drawableStart="@drawable/ic_round_search_24"
+                        android:imeOptions="actionSearch"
+                        android:padding="5dp"
+                        android:hint=" Search your notes"
+                        android:paddingStart="18dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="18dp"
+                        android:paddingBottom="4dp"
+                        android:importantForAutofill="no"
+                        android:inputType="textFilter">
+
+                    </EditText>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="5dp"
+        android:transitionGroup="true"
+        tools:listitem="@layout/note_layout"
+        android:background="@color/transparent"
+        android:backgroundTint="@color/transparent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/no_data"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_no_data"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone">
+
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/add_note_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        android:focusable="true"
+        android:animateLayoutChanges="true"
+        android:clipToPadding="false"
+        android:background="@drawable/fab_btn_corner"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/inner_fab"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_round_add_24"
+            android:elevation="0dp"
+            android:padding="10dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/chatFabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/google_sans_regular"
+            android:text="Add Note"
+            android:textColor="?attr/colorOnPrimary"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Button">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
