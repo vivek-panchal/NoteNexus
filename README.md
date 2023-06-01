@@ -1,6 +1,17 @@
 # Note Taking App
 This is an Android application developed using Kotlin, XML, Fragments, Adapters, and Firebase. The app allows users to create, store, and manage their notes using Firebase as a cloud storage database.
 
+## Some ScreenShots(Actual App Even Looks Better 😃): </br>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/1.png" width=30% height=30%/> <img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/2.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/3.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/4.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/5.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/6.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/7.png" width=30% height=30%/>
+<img src="https://github.com/vivek-panchal/NoteNexus/blob/master/AppScreenshot/8.png" width=30% height=30%/>
+<br>
+<br>
+
 ## Features
 The app comes with a host of features to enhance your note-taking experience. Some of these features include:
 
